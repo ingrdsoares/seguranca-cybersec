@@ -1,5 +1,6 @@
-# Relatório Técnico: Mapeamento de Rede e Análise de Vulnerabilidades
+## 1. Capa
 
+- **Título do Projeto:** Projeto Técnico - Mapeamento de Rede em Docker
 - **ID do Relatório:** RT-2025-001
 - **Data de Emissão:** 2025-07-29
 - **Analista Responsável:** Ingrid Soares
@@ -7,25 +8,25 @@
 
 ---
 
-## 1. Sumário Executivo
+## 2. Sumário Executivo
 
 Este relatório detalha os resultados de um exercício de mapeamento de rede e análise de vulnerabilidades realizado no ambiente de escritório simulado. Foram identificados 3 ativos principais, incluindo um servidor web com uma vulnerabilidade crítica (Apache desatualizado) e um servidor de arquivos com permissões de compartilhamento excessivamente abertas. Recomenda-se a aplicação imediata de patches de segurança no servidor web e a revisão das permissões no servidor de arquivos para mitigar os riscos de acesso não autorizado e exploração.
 
 ---
 
-## 2. Objetivo
+## 3. Objetivo
 
 O objetivo deste trabalho foi identificar e documentar todos os ativos presentes na sub-rede `192.168.1.0/24`, avaliar sua exposição a potenciais ameaças e fornecer um plano de ação para corrigir as vulnerabilidades encontradas.
 
 ---
 
-## 3. Escopo
+## 4. Escopo
 
 O escopo deste teste limitou-se à sub-rede `192.168.1.0/24`, conforme definido no desafio. As atividades incluíram varredura de portas, identificação de serviços e análise de configurações.
 
 ---
 
-## 4. Metodologia
+## 5. Metodologia
 
 Para a execução do mapeamento, foram utilizadas as seguintes ferramentas e técnicas:
 - **Nmap:** Para varredura de portas TCP/UDP, identificação de serviços e versões.
@@ -34,7 +35,7 @@ Para a execução do mapeamento, foram utilizadas as seguintes ferramentas e té
 
 ---
 
-## 5. Diagrama da Rede
+## 6. Diagrama da Rede
 
 ```mermaid
 graph TD
@@ -54,7 +55,7 @@ graph TD
 
 ---
 
-## 6. Diagnóstico de Exposição
+## 7. Diagnóstico de Exposição
 
 A análise revelou os seguintes pontos de exposição:
 
@@ -66,7 +67,7 @@ A análise revelou os seguintes pontos de exposição:
 
 ---
 
-## 7. Recomendações
+## 8. Recomendações
 
 1.  **Atualização do Servidor Web:** Atualizar imediatamente o Apache para a versão mais recente para corrigir a vulnerabilidade crítica.
 2.  **Revisão de Permissões:** Alterar as permissões do compartilhamento "Publico" no servidor de arquivos para "Somente Leitura" para o grupo "Todos". Acesso de escrita deve ser restrito a grupos de usuários autorizados.
@@ -74,7 +75,7 @@ A análise revelou os seguintes pontos de exposição:
 
 ---
 
-## 8. Plano de Ação (Modelo 80/20)
+## 9. Plano de Ação (Modelo 80/20)
 
 | Ação (20% do Esforço) | Impacto (80% do Resultado) | Responsável | Prazo |
 | :--- | :--- | :--- | :--- |
@@ -83,6 +84,12 @@ A análise revelou os seguintes pontos de exposição:
 
 ---
 
-## 9. Conclusão
+## 10. Conclusão
 
 O ambiente apresenta riscos significativos que podem ser mitigados com ações de baixo esforço e alto impacto. A implementação do plano de ação proposto é crucial para garantir a segurança e a integridade dos dados da organização.
+
+---
+
+## 11. Anexos
+
+Nenhum anexo para este relatório.
