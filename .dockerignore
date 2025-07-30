@@ -1,0 +1,5 @@
+# Ignorar o diretório de controle de versão do Git
+.git
+
+# Ignorar o próprio Dockerfile
+Dockerfile
