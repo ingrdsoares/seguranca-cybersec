@@ -8,11 +8,11 @@ RUN apk add --no-cache pandoc
 # Define o diretório de trabalho dentro do contêiner.
 WORKDIR /app
 
-# Copia o nosso arquivo de política para dentro do contêiner.
-COPY politica_de_seguranca.md .
+# Copia o nosso arquivo de relatório para dentro do contêiner.
+COPY relatorio_mapeamento_rede.md .
 
 # Executa a conversão, criando um arquivo HTML completo.
-RUN pandoc --standalone --from markdown --to html5 -o index.html politica_de_seguranca.md
+RUN pandoc --standalone --from markdown --to html5 -o index.html relatorio_mapeamento_rede.md
 
 # ---
 

@@ -1,23 +1,32 @@
-# Projeto de Segurança da Informação
+# Projeto Técnico: Mapeamento de Rede em Docker
 
 ## Objetivo
 
-Este repositório tem como objetivo centralizar e versionar a documentação de segurança da informação, começando pela **Política de Segurança da Informação (PSI)**.
+Este repositório contém a documentação e a aplicação Docker para a entrega do **Projeto Técnico de Mapeamento de Rede**, conforme a "Opção 1" do desafio do Módulo 1 de Fundamentos de CyberSec.
 
-## Documento Principal
+O projeto consiste em um relatório técnico detalhado, gerado a partir de um escaneamento simulado de uma rede corporativa, e uma aplicação web para sua visualização.
 
-O conteúdo da política está disponível no arquivo abaixo:
+## Documentação Principal
 
-- **[Política de Segurança da Informação](./politica_de_seguranca.md)**
+- **[Relatório de Mapeamento de Rede](./relatorio_mapeamento_rede.md)**: O documento central do projeto, contendo o diagnóstico, as recomendações e o plano de ação.
 
-## Como Contribuir ou Visualizar
+## Documentação Adicional
 
-Para visualizar o documento, basta clicar no link acima. Para contribuir, siga o fluxo padrão do Git:
+- **[Política de Segurança da Informação](./politica_de_seguranca.md)**: Um exemplo de documento de política que pode ser usado como base para futuras implementações.
 
-1.  Clone o repositório.
-2.  Crie uma nova branch para sua alteração.
-3.  Faça o commit das suas mudanças.
-4.  Abra um Pull Request.
+## Como Executar a Aplicação
 
----
-*Este projeto serve como um modelo prático para a gestão de documentos de cibersegurança.*
+Para visualizar o relatório como uma página web, utilize o Docker:
+
+1.  **Construa a imagem:**
+    ```bash
+    docker build -t seguranca-app .
+    ```
+
+2.  **Execute o contêiner:**
+    ```bash
+    docker run --rm -p 8080:80 seguranca-app
+    ```
+
+3.  **Acesse:** Abra seu navegador e vá para `http://localhost:8080`.
+
