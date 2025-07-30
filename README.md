@@ -13,6 +13,7 @@ O projeto consiste em um relatório técnico detalhado, gerado a partir de um es
 ## Documentação Adicional
 
 - **[Política de Segurança da Informação](./politica_de_seguranca.md)**: Um exemplo de documento de política que pode ser usado como base para futuras implementações.
+- **[Plano de Resposta a Incidentes](./plano_resposta_incidentes.md)**: Descreve o processo passo a passo para gerenciar um incidente de segurança.
 
 ## Como Executar a Aplicação
 
